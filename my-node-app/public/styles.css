@@ -1,0 +1,614 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    flex-grow: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
+
+
+button {
+    margin-left: 10px;
+    background-color: #22a454;
+    color: #fff;
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer;
+    border:2.5px solid #080808;
+    transition: 0.5s ease;
+
+}
+
+#menu-btn {
+    display: none; /* Hide menu button initially */
+}
+
+
+
+.logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+button {
+    transform: rotate(10deg); /* Adjust the degree of rotation as needed */
+    margin-left: 5px; /* Adjust the margin as needed */
+    
+}
+
+button:hover{
+    transform:rotate(0deg) ;
+}
+
+/* Define styles for the active class */
+
+
+.About{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+.content h1{
+    font-size: 45px;
+}
+
+.content  p{
+    font-size: 25px;
+    color: #a09b9b;
+
+}
+.content span{
+    color: #65e696;
+}
+.image img{
+    width: 80%;
+    height: 100%;
+}
+
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10%;
+    background-color: #bcdddd;
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.grid1 {
+    width: calc(25.33% - 20px); /* 33.33% width for each column with margin */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f2f2f2; /* Background color for the grid items */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1); /* Add shadow for a card-like effect */
+    border: 2px solid black;
+    transition: 0.5s ease-in;
+}
+
+.grid1 i {
+    font-size: 40px; /* Adjust icon size as needed */
+    margin-bottom: 10px; /* Adjust icon margin as needed */
+   
+}
+
+
+.grid1:hover{
+    border:2px solid rgb(165, 254, 254);
+    transform: scale(1.1);
+}
+
+.headline {
+    text-align: center; /* Center-align the text */
+    background-color: #a7dcd2; /* Set background color */
+    padding: 20px; /* Add padding around the text */
+    margin: 20px auto; /* Center the container horizontally and add margin */
+}
+
+.rev-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+    background-color: #f6f3a7;
+    padding: 1.5%;
+    border-radius: 15px;
+    border-right: 4px rgb(19, 19, 18) solid; /* Border only on top */
+    border-bottom: 4px rgb(6, 6, 6) solid; /* Border only on bottom */
+}
+
+.text {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding around the text */
+    border: 1.5px solid #ccc; /* Add a border for clarity */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    margin-right: 20px;
+}
+
+.text h2 {
+    font-size: 24px; /* Adjust font size for headings */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.text h4 {
+    font-size: 16px; /* Adjust font size for paragraphs */
+    color: #666; /* Set paragraph text color */
+    margin-bottom: 10px; /* Add space below paragraphs */
+}
+
+.text h3 {
+    font-size: 18px; /* Adjust font size for names */
+    color: #333; /* Set name text color */
+    margin-bottom: 5px; /* Add space below names */
+}
+
+.text p {
+    font-size: 14px; /* Adjust font size for additional info */
+    color: #888; /* Set additional info text color */
+}
+
+.text li {
+    color: rgb(87, 87, 86);
+    font-weight: 900;
+    list-style: none;
+    position: relative; /* Ensure position context for pseudo-element */
+    padding-left: 20px; /* Adjust left padding for text */
+}
+
+.text li::before {
+    content: "\2022"; /* Unicode bullet character */
+    color: #cac6c6; /* Custom bullet color */
+    font-size: 20px; /* Adjust bullet size */
+    position: absolute;
+    left: 0; /* Adjust position of bullet */
+}
+
+
+
+.img {
+    padding: 20px;
+}
+
+.img img {
+    width: 70%;
+    height: auto;
+}
+
+
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #f6f3a7;
+    padding: 2%;
+    border-radius: 15px;
+    border-right: 4px rgb(19, 19, 18) solid; /* Border only on top */
+    border-bottom: 4px rgb(6, 6, 6) solid; /* Border only on bottom */
+    transition: 0.5s ease-in;
+}
+
+.col-2:hover{
+    border-bottom: 4px rgb(110, 142, 156) solid;
+    border-right: 4px rgb(110, 142, 156) solid;
+}
+
+
+
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background-color: #00e785; /* Set background color */
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Add border radius */
+    margin: auto; /* Center horizontally */
+    max-width:70%; /* Set maximum width */
+    margin-bottom: 3%;
+    border: 2px black solid;
+    transition: 0.5s ease-in-out;
+}
+
+.col-1:hover{
+    transform: scale(1.1);
+}
+
+.col-1 h4 {
+    text-align: center; /* Center text */
+    color: #121d18; /* Set text color */
+    font-family:'poppins';
+}
+
+.col-1 span{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 20px;
+}
+.col-1 button {
+    margin: 10px 0; /* Add margin between buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+.button-container{
+    display: flex;
+}
+
+.col-1 button:first-of-type {
+    background-color: rgb(255, 255, 255); /* Set background color for the first button */
+    color: rgb(0, 0, 0);
+    transform: rotate(-5deg); /* Adjust the degree of rotation as needed */
+
+}
+
+.col-1 button:last-of-type {
+    background-color: transparent; /* Set background color for the last button */
+    border: 2px solid black;
+    color: rgb(0, 0, 0);
+}
+
+.col-1 button:hover {
+    
+    transform: rotate(15deg); /* Adjust the degree of rotation as needed */
+}
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+.footer-item h4 {
+    margin-bottom: 10px;
+    color: rgb(214, 214, 162);
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 5px;
+    
+}
+
+.footer-item ul li a{
+    color: rgb(112, 109, 109);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-item ul li a:hover{
+    color: rgb(214, 214, 162);
+}
+
+.social-icons {
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+
+
+.fadeIn {
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+
+.slideInLeft {
+    animation: slideInLeftAnimation 2s ease-in-out forwards;
+}
+
+.slideInRight {
+    animation: slideInRightAnimation 3s ease-in-out forwards;
+}
+
+
+
+
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeftAnimation {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRightAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .rev-grid {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text h2 {
+        font-size: 24px;
+    }
+
+    .text h4 {
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+   
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+
+    .buttons button {
+        margin: 5px 0;
+    }
+
+    #menu-btn {
+        display: block; /* Show menu button on smaller screens */
+        font-size: 24px;
+        color: #000000;
+        cursor: pointer;
+    }
+
+
+   
+
+ 
+
+.About{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 7%;
+}
+
+.grid1 {
+    width: calc(50% - 20px); /* 50% width for each column with margin */
+}
+
+
+
+    .rev-grid {
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-template-columns: 1fr;
+    }
+
+    .text h2 {
+        font-size: 24px;
+    }
+
+    .text h4 {
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 100%;
+    }
+
+
+    .col-2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+
+    .col-1 {
+        padding: 10px; /* Reduce padding on smaller screens */
+        max-width: 90%; /* Adjust maximum width */
+    }
+
+
+
+/* CSS for the header and navigation bar */
+.header .container .navbar {
+    display: none; /* Hide navbar by default */
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+ 
+    padding: 10px;
+    z-index: 999; /* Ensure navbar appears above other content */
+
+}
+
+.header .container .navbar.active {
+    display: flex;
+   
+}
+
+.header .container .navbar.active a:hover{
+    color: #00e785;
+}
+.header .container .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+   
+}
+
+.header .container .navbar li {
+    margin: 10px 0; /* Adjust margin between navbar items */
+
+}
+
+.header .container .navbar a {
+    color: #000000; /* Set text color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+@media screen and (max-width: 460px) {
+  /* Define styles for the active class */
+
+
+.col-1 {
+    padding: 5px; /* Further reduce padding on smaller screens */
+}
+
+.col-1 button {
+    padding: 8px 16px; /* Adjust button padding on smaller screens */
+}
+.grid-container {
+    margin: 2%; /* Adjust margin for smaller screens */
+    padding: 2%; /* Adjust padding for smaller screens */
+}
+
+.grid1 {
+    width: calc(100% - 20px); /* 100% width for each column with margin */
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+
+
+.header .container .navbar {
+    display: none; /* Hide navbar by default */
+    z-index: 1000; /* Ensure navbar appears above other content */
+}
+
+.header .container .navbar.active {
+    display: flex;
+    flex-direction: column;
+ 
+    position: absolute;
+    top: 60px; /* Adjust the top position as needed */
+    left: 0;
+    right: 0;
+    padding: 10px;
+    margin-top: 2.5%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+
+} 
